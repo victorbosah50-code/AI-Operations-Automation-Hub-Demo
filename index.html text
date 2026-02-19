@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Operations Automation Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AI Operations Automation Hub</h1>
+        <button id="toggle-mode">Toggle Dark Mode</button>
+        <button id="generate-report">Generate Report</button>
+    </header>
+    <main class="container">
+        <section class="input-section">
+            <h2>Process Incoming Email</h2>
+            <form id="email-form">
+                <textarea id="email-content" placeholder="Paste email content here..." aria-label="Email content input" required></textarea>
+                <button type="submit">Process Email</button>
+            </form>
+        </section>
+        <section class="dashboard">
+            <h2>Operations Dashboard</h2>
+            <table id="logs-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Classification</th>
+                        <th>Leads</th>
+                        <th>Priority</th>
+                        <th>Task Routed To</th>
+                    </tr>
+                </thead>
+                <tbody id="logs-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 AI Ops Automation Demo | Built for showcasing skills</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
