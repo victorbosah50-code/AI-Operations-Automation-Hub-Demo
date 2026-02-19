@@ -1,49 +1,47 @@
-# AI Operations Automation Hub Demo
-This repository contains a web-based demo for an AI Operations Automation Hub. It simulates a business automation system that processes incoming emails: classifying them with AI logic, extracting leads, routing tasks by priority, logging to a dashboard, and generating reports.
+# AI Operations Automation Hub Demo (Real AI Edition)
 
-Built with vanilla HTML, CSS, and JavaScript. Runs client-side, making it easy to deploy on GitHub Pages.
+![Demo Screenshot](https://via.placeholder.com/800x400?text=AI+Ops+Automation+Hub+Real+AI) <!-- Replace with actual screenshot -->
+
+This updated repository features a web-based demo for an AI Operations Automation Hub using **real client-side AI** via TensorFlow.js and Universal Sentence Encoder. It processes "emails": classifies semantically, extracts leads, determines priority via embeddings, routes tasks, logs to dashboard, and generates reports.
+
+Built with HTML, CSS, JavaScript, and TensorFlow.js. No backend—fully client-side.
 
 ## Features
-- **Email Processing**: Paste email content; app simulates AI classification (e.g., sales, support, urgent), lead extraction (emails, phones), and task routing.
-- **Dashboard**: Interactive table logs all processed emails with details; sortable and filterable.
-- **Report Generation**: Auto-generate and download CSV reports summarizing operations.
-- **Modern Interface**: Responsive design, dark mode, animations, and accessibility (ARIA).
-- **Persistence**: Uses localStorage to save processed logs across sessions.
-- **Export Options**: Download logs as CSV directly from dashboard.
-- **Simulation Logic**: Keyword/regex-based "AI" for classification and extraction—extensible for real ML integration.
+- **Real AI Processing**: Semantic classification and priority using ML embeddings (cosine similarity).
+- **Email Input**: Paste content; AI analyzes in real-time.
+- **Dashboard**: Sortable table for logs.
+- **Reports**: Download CSV summaries.
+- **Modern UI**: Responsive, dark mode, animations.
+- **Persistence**: localStorage for logs.
+- **Model**: Universal Sentence Encoder for lightweight NLP.
 
-Ideal for interviews as an AI Operations Specialist, showcasing:
-- Automation workflows and logic.
-- Data handling and visualization.
-- Clean, scalable code.
+Showcases advanced skills: ML integration, async handling, vector math.
 
 ## Demo
-Live demo: [https://yourusername.github.io/ai-ops-automation-hub/](https://yourusername.github.io/ai-ops-automation-hub/) (replace with your repo URL).
+Live: https://victorbosah50-code.github.io/AI-Operations-Automation-Hub-Demo/
 
 ## Installation
-1. Clone the repo:
-2. 2. Open `index.html` in a browser.
-3. For GitHub Pages: Enable in settings > Pages > main branch.
+1. Clone:
+2. 2. Open `index.html`.
+3. GitHub Pages: Enable in settings.
 
 ## Usage
-- Enter email content in the form (e.g., "Urgent support request from john@example.com about product issue. Phone: 123-456-7890").
-- Click "Process Email" to simulate AI actions.
-- View logs in the dashboard table.
-- Generate and download reports via the button.
-- Toggle dark mode for better UX.
+- Paste email (e.g., "Urgent sales lead from john@example.com, phone 123-456-7890").
+- Process: AI classifies semantically.
+- View dashboard.
+- Generate report.
+- Note: First load downloads ML model (~100MB).
 
 ## Technologies
-- HTML5
-- CSS3 (Grid, Flexbox, Transitions)
-- Vanilla JavaScript (DOM, localStorage, CSV export)
+- HTML5, CSS3, JS
+- TensorFlow.js & Universal Sentence Encoder for AI
 
 ## Extending
-- Integrate real AI (e.g., Hugging Face models via JS).
-- Add backend for actual email integration (e.g., Node.js).
-- Enhance with charts (e.g., Chart.js).
+- Fine-tune with custom embeddings.
+- Add backend for real email API (e.g., Gmail).
 
 ## License
-MIT License. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
 
 ## Contact
-Reach out on GitHub
+GitHub or LinkedIn.
